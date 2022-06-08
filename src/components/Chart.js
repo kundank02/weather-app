@@ -1,10 +1,8 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
-import { Chart as ChartJS } from 'chart.js/auto'
+
 
 function Chart(props) {
-
-    //if classname === blue-card we need to show today's data on the graph
 
     //trying to get today's date so we can match today with today's weather from the api 
     let date = new Date();
@@ -85,8 +83,5 @@ function Chart(props) {
         </div>
     )
 }
-
-/*props.activeButton.includes("blue-card") || !props.activeButton ? 
-todayArr.map(item => {return Math.round(item.main.temp)}) : temps.map(item => {return Math.round(item.temp)})*/
 
 export default Chart;

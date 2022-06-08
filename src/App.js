@@ -5,7 +5,7 @@ import Conditions from './components/Conditions';
 import Forecast from './components/Forecast';
 import Chart from './components/Chart';
 
-const API_KEY = "7ad671c6005b1ec7efdca22c1a2217a6";
+const API_KEY = process.env.API_KEY;
 
 
 function App() {
